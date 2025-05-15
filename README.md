@@ -31,3 +31,13 @@ the RabbitMQ message broker instance in this case works as somekind of event sta
 ### RabbitMQ image
 
 ![](RabbitMQ.png)
+
+### Cargo Run 1
+
+![](CargoRun1.png)
+
+What happened is: first i cargo run on the subscriber directory, the subscriber program establish connection to RabbitMQ message broker through port 5672 with username guest and password guest.
+
+Then i cargo run on the publisher directory, the publisher program then connect to the RabbitMQ message broker through port 5672 with username and password as the subscriber to connect with the same instance of the message broker. 
+
+The publisher program then send 5 message to the message broker through port 5672, and then the message is received by subscriber which is processed and printed on the screen
