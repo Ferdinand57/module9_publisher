@@ -27,3 +27,7 @@ and "5672" is the port that our message broker listen to for amqp protocol
 the fact that both subscriber and publisher uses the same url means that both subscriber and publisher uses the same instances of RabbitMQ message broker
 
 the RabbitMQ message broker instance in this case works as somekind of event station where the publisher send event and subscriber receive event and process it 
+
+### RabbitMQ image
+
+![](RabbitMQ.png)
