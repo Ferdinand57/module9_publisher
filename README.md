@@ -41,3 +41,9 @@ What happened is: first i cargo run on the subscriber directory, the subscriber 
 Then i cargo run on the publisher directory, the publisher program then connect to the RabbitMQ message broker through port 5672 with username and password as the subscriber to connect with the same instance of the message broker. 
 
 The publisher program then send 5 message to the message broker through port 5672, and then the message is received by subscriber which is processed and printed on the screen
+
+### RabbitMQ Spike
+
+![](RabbitMQSpike.png)
+
+The spike shown on message rates directly affected by the rates of message that that the RabbitMQ message broker received from the publisher program, in this case because i run the program repeateadly the spike continue to went up until i stop cargo running the publisher program, on which the stream of message stops and the rates went to 0 again
